@@ -24,7 +24,9 @@ Plot Carbon VS Recon Age
 
 * (2) does the provenance of carbon play a role in its liberation?
 
-The various grids represent an amount of carbon. Do the values of these grids result in an eruption?
+The various grids represent an amount of carbon. Do the values of these grids result in an eruption? Plot cumultive subducted carbon (e.g. 20Myr before eruption).
 
 * (3) can this be correlated with the composition of eruption products from volcanoes at specific locations through time? 
+
+ML, what parameters lead to eruptions?
 
