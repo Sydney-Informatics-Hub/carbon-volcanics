@@ -16,4 +16,15 @@ Each volcanic rock sample from the spreadsheet is associated with the formation 
 This flat file can then be explored for parameter correlations and machine learning inferences. ***VolcanoExplorer.ipynb***
 
 
+## Questions
+* (1) how much carbon is released and over what timescales?
+
+There are 972 dated volcanic rock samples that represent an eruption event. 
+Plot Carbon VS Recon Age
+
+* (2) does the provenance of carbon play a role in its liberation?
+
+The various grids represent an amount of carbon. Do the values of these grids result in an eruption?
+
+* (3) can this be correlated with the composition of eruption products from volcanoes at specific locations through time? 
 
