@@ -29,4 +29,4 @@ The various grids represent an amount of carbon. Do the values of these grids re
 * (3) can this be correlated with the composition of eruption products from volcanoes at specific locations through time? 
 
 ML, what parameters lead to eruptions?
-
+Potentially interesting products include: 'Hf', 'Nd', 'Ni','Nd143_Nd144', 'Hf176_Hf177'
