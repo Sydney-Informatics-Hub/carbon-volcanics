@@ -47,5 +47,16 @@ If the mapping is changed from within GPlates, this file will be overwritten.
 -->
 <GPlatesShapefileMap version="1">
     <Begin>ReconAge</Begin>
+    <ConjugatePlateId>PLATEID2</ConjugatePlateId>
+    <Description>DESCR</Description>
+    <End>TOAGE</End>
+    <FeatureId>FEATURE_ID</FeatureId>
+    <FeatureType>GPGIM_TYPE</FeatureType>
+    <GeometryImportTime>IMPORT_AGE</GeometryImportTime>
+    <LeftPlate>L_PLATE</LeftPlate>
+    <Name>NAME</Name>
+    <ReconstructionMethod>RECON_METH</ReconstructionMethod>
     <ReconstructionPlateId>ReconPlate</ReconstructionPlateId>
+    <RightPlate>R_PLATE</RightPlate>
+    <SpreadingAsymmetry>SPREAD_ASY</SpreadingAsymmetry>
 </GPlatesShapefileMap>
