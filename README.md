@@ -11,17 +11,21 @@ All scripts and grids availble from Dropbox or Cloudstor: https://cloudstor.aarn
 
 This repo contains scripts to merge the grids and the spreadsheet data in a pleasant flat csv file.
 
-Each volcanic rock sample from the spreadsheet is associated with the formation location/time and correspding grid values. ***VolcanoLoader.ipynb***
+* Each volcanic rock sample from the spreadsheet is associated with the formation location/time and correspding grid values: ***01-VolcanoLoader.ipynb***
 
-This flat file can then be explored for parameter correlations and machine learning inferences. ***VolcanoExplorer.ipynb***
+* This flat file can then be explored for parameter correlations, and target datasets for machine learning are generated in: ***02-VolcanoExplorer.ipynb***
 
+* Two different approaches are performed. The first explores specific eruption products (geochemistry) and tries to learn which subduction parameters (e.g. carbon grids) are associated with the geochemistry of the eruption: ***03-VolcanoML-producs.ipnb***. The second analysis compares all the volcanic eruptions with a randomly generated set of points to identify which subduction parameters are linked to eruption events: ***03-VolcanoML-eruptionevents.ipynb***.
+
+* ***01a-VolcanoPlotter.ipynb*** plots the carbon grids and the points through time.
 
 ## Questions (from Ben's original proposal)
 * (1) how much carbon is released and over what timescales?
 
 There are 972 dated volcanic rock samples that represent an eruption event. *Some* of these have CO2 data and maybe other eruption products that could be used as a proxy for amount of carbon released. If we can pin down which products to use we may be able to answer this question, otherwise the data may be too sparse.
 
-A quick plot of **Carbon (CO2) VS Recon Age** could be enlightening, but does not show anything too interesting. Further **XXX VS Recon Age** could also be interesting, but there is nothing conclusive from these alone.
+A quick plot of **Carbon (CO2) VS Recon Age** could be enlightening, but does not show anything too interesting. All features are plotted in **results/XvsReconAge.png**, there is nothing conclusive from these alone.
+
 
 * (2) does the provenance of carbon play a role in its liberation?
 
@@ -32,7 +36,10 @@ To build an ML model to predict whether the carbon in the lithosphere/crust/etc 
 
 The historgrams (diagonal) show the typical baseline vs the eruption events. Subducted sediment carbon appears to be the strongest predictor of an eruption event. All the grids are significantly more correlated to an eruption event than a random variable (Sample_ID -modified).
 
+In conclusion the answer to this question is Yes. Stuff going down influences what comes up and when it comes up!
+
+
 * (3) can this be correlated with the composition of eruption products from volcanoes at specific locations through time? 
 
-This question may pose a problem of sparsity. There is no eruption event with all measured eruption products. 
-Potentially interesting products include: 'Hf', 'Nd', 'Ni','Nd143_Nd144', 'Hf176_Hf177', '207pb_204pb'
+There is no eruption event with all measured eruption products. We can identify what subduction parameters are linked to specific amounts of eruption products: 'CO2', 'Hf', 'Nd','Nd143_Nd144', 'Hf176_Hf177', '207pb_204pb'
+The results are in ***results/results.pptx***.
